@@ -32,6 +32,9 @@ npx knex migrate:rollback
 
 # Create new seed file
 npx knex seed:make 001-table-to-seed
+
+# Run seed file
+npx knex seed:run
 ```
 
 
@@ -58,3 +61,7 @@ npx knex seed:make 001-table-to-seed
 - `npx knex migrate:latest`
 
 4. [Install SQLite Studio](https://sqlitestudio.pl/)
+
+5. Create Seed
+
+- `npx knex seed:make 001-cars`
