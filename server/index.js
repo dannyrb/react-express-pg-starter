@@ -1,5 +1,4 @@
 const server = require('./server.js')
-const CarsController = require('./controllers/CarsController.js')
 const port = process.envPORT || 6868
 
 server.listen(port, () => {
