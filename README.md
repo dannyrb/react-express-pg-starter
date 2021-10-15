@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+## Getting Started
+
 
 ## Available Scripts
 
@@ -15,6 +17,23 @@ npm test
 # npm run build
 Builds the app for production to the `build` folder.
 ```
+
+## Migrations Cheat Sheet
+
+```bash
+# Create new blank migration
+npx knex migrate:make NAME_OF_MIGRATION
+
+# Apply migration
+npx knex migrate:latest
+
+# Rollback bad migration
+npx knex migrate:rollback
+
+# Create new seed file
+npx knex seed:make 001-table-to-seed
+```
+
 
 ## Steps to setup from scratch
 
@@ -34,3 +53,8 @@ Builds the app for production to the `build` folder.
 
 - `npx knex init`
 - Create `data/db-config.js` file
+- `npx knex migrate:make create-cars`
+- Update migration file's `up` and `down` methods
+- `npx knex migrate:latest`
+
+4. [Install SQLite Studio](https://sqlitestudio.pl/)
