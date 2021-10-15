@@ -30,3 +30,7 @@ Builds the app for production to the `build` folder.
 - `npm i -D nodemon`
 - `npm i express sqlite3 knex`
 
+3. [Setup DB](https://medium.com/@MajikMan/starting-a-node-project-from-scratch-with-sqlite3-knex-and-express-fb4b765aca)
+
+- `npx knex init`
+- Create `data/db-config.js` file
