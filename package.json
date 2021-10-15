@@ -15,7 +15,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "npm run start:server && npm run start:server",
+    "start": "npm run start:client && npm run start:server",
     "start:client": "react-scripts start",
     "start:server": "node server/index.js",
     "server": "nodemon server/index.js",
@@ -23,6 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:6868",
   "eslintConfig": {
     "extends": [
       "react-app",
